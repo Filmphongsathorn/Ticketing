@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-amber: #f5a623;
+    --color-gold:  #e8c96a;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0a0a0b;
+    color: #d4d4dc;
+    font-family: 'DM Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+  }
+
+  /* Thin amber scrollbar */
+  ::-webkit-scrollbar       { width: 5px; }
+  ::-webkit-scrollbar-track { background: #111114; }
+  ::-webkit-scrollbar-thumb { background: #3a3020; border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { background: #f5a623; }
+
+  ::selection { background: rgba(245, 166, 35, 0.25); color: #fff; }
+}
+
+@layer utilities {
+  /* Shimmer skeleton utility */
+  .skeleton {
+    background: linear-gradient(
+      90deg,
+      #18181d 25%,
+      #242430 50%,
+      #18181d 75%
+    );
+    background-size: 200% auto;
+    animation: shimmer 2s linear infinite;
+  }
+
+  .text-amber-gradient {
+    background: linear-gradient(135deg, #f5a623 0%, #e8c96a 50%, #f5a623 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .border-amber-glow {
+    border-color: rgba(245, 166, 35, 0.35);
+    box-shadow: 0 0 0 1px rgba(245, 166, 35, 0.10);
+  }
+}
