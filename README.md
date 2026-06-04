@@ -111,33 +111,29 @@ The frontend is a masterclass in modern React development, optimizing for both D
 
 ---
 
-## 🚀 Deployment & Installation Guide
+## 🚀 Instant Quick-Start (For Frontend Reviewers)
 
-To initialize this enterprise architecture on your local development machine:
+We've configured a root-level wrapper so that **anyone** can clone and run this massive ecosystem instantly without needing to configure the Java Backend or Docker infrastructure.
 
-### 1. Prerequisites
-*   **Node.js** (v18.0.0+ LTS recommended)
-*   **Git CLI**
-
-### 2. Clone the Source Code
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/stagefront-concert-app.git
 cd stagefront-concert-app
 ```
 
-### 3. Resolve Dependencies
-The project uses `npm` lockfiles to ensure deterministic builds.
+### 2. Auto-Install Dependencies (Magic Step ✨)
+Just run `npm install` in the root folder! Our custom scripts will automatically detect the Monorepo structure, route into the `frontend/` directory, and install everything for you seamlessly.
 ```bash
-npm ci  # Use 'ci' (Clean Install) for strict version adherence instead of 'install'
+npm install
 ```
 
-### 4. Ignite the Build Engine
+### 3. Ignite the Engine
+Run the development command from the root. It will automatically boot up the Vite server.
 ```bash
 npm run dev
 ```
 
-### 5. Access the Platform
-Navigate to the local port displayed in your terminal stdout:
+### 4. Access the Platform
 👉 **`http://localhost:3000`**
 
 ---

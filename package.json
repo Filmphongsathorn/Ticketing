@@ -1,0 +1,13 @@
+{
+  "name": "stagefront-enterprise-ecosystem",
+  "version": "1.0.0",
+  "description": "Root configuration for the StageFront Monorepo",
+  "private": true,
+  "scripts": {
+    "postinstall": "cd frontend && npm install",
+    "dev": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "npm run dev",
+    "backend:up": "docker-compose up -d"
+  }
+}
