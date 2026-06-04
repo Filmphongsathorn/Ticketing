@@ -1,0 +1,4 @@
+# Ignore mock data and built assets for language statistics
+frontend/src/api/mockApi.js linguist-vendored
+frontend/dist/** linguist-vendored
+frontend/node_modules/** linguist-vendored
